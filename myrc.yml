@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myjenkins-rc
+  name: myjavaapp-rc
 spec:
   replicas: 5
   selector: 
-     app: myjenkins
+     app: myjavaapp
   template:
     metadata:
        labels:
-          app: myjenkins
+          app: myjavaapp
     spec:
       containers:
-      - name: myjenkins-container
-        image: jenkins:2.60.3
+      - name: myjavaapp-container
+        image: nitesh09.nck/javalogin:1
         ports:
           - containerPort: 8080  
