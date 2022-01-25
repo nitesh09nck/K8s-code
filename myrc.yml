@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: myjavaapp-container
-        image: nitesh09.nck/javalogin:1
+        image: nitesh09.nck/myjavaapp:1
         ports:
           - containerPort: 8080  
